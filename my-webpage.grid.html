@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page (Using SimpleGrid)</title>
+    <link rel="stylesheet" href="simple-grid.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .row {
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        .place img {
+            margin-top: 10px;
+        }
+
+        /* .responsive-img-text {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .responsive-img-text .col-4, .responsive-img-text .col-8 {
+            padding: 10px;
+        }
+
+        .responsive-img-text img {
+            margin-bottom: 10px;
+        } */
+
+        footer {
+            background-color: aqua;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        /* @media (max-width: 768px) {
+            .responsive-img-text {
+                flex-direction: column;
+            }
+
+            .place {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .place div {
+                margin-bottom: 20px;
+            }
+        } */
+
+        /* @media (min-width: 769px) {
+            .responsive-img-text {
+                flex-direction: row;
+            }
+
+            .place {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .place div {
+                flex: 1;
+                margin-right: 10px;
+            }
+
+            .place div:last-child {
+                margin-right: 0;
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <h1>Welcome to My Web Page</h1>
+        <div class="row">
+            <div class="col-4">
+                <h3>Thobani Gwala</h3>
+            </div>
+            <div class="col-4">
+                <img id="myProfile" src="Thobani Gwala.jpg" alt="Thobani photo">
+            </div>
+            <div class="col-4">
+                <!-- Additional content can go here if needed -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h2>Durban</h2>
+            </div>
+            <div class="responsive-img-text">
+                <div class="col-4">
+                    <img src="Durban.jpg" alt="City Photo">
+                </div>
+                <div class="col-8">
+                    <p>Durban is also an important port on the Indian Ocean and the gateway to many of South Africa's
+                        world-renowned safaris. With its combination of modern attractions and natural beauty, Durban
+                        KwaZulu Natal is an ideal destination for travelers looking to experience the best of South
+                        African culture and nature.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h2>A Foreign Language</h2>
+                <p>Language I want to learn and phrases.</p>
+                <table>
+                    <tr>
+                        <th>English</th>
+                        <th>French</th>
+                    </tr>
+                    <tr>
+                        <td>Hi</td>
+                        <td>Bonjour</td>
+                    </tr>
+                    <tr>
+                        <td>You look beautiful</td>
+                        <td>Tu es magnifique</td>
+                    </tr>
+                    <tr>
+                        <td>Home is the place to be</td>
+                        <td>La maison est l'endroit où il faut être</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h2>Favourite Subjects</h2>
+            </div>
+            <div class="col-4">
+                <h3>(241S6ARSA1) AGILE RAPID SKILLS ACQUISITION</h3>
+                <img src="Agile repad skills.jpg" alt="Subject 1 Photo">
+                <p>AGILE RAPID SKILLS ACQUISITION: This part of the code likely describes the focus of the
+                    course or program. It suggests a curriculum centered on quickly developing skills using agile
+                    methodologies.</p>
+            </div>
+            <div class="col-4">
+                <h3>(241S6EBSA1) ENGINEERING BUSINESS SYSTEMS FOR 4IR</h3>
+                <img src="Engineering business system.jpg" alt="Subject 2 Photo">
+                <p>Engineering Business Systems for the Fourth Industrial Revolution (4IR) involves the
+                    integration of advanced engineering principles with business practices.</p>
+            </div>
+            <div class="col-4">
+                <h3>(241S6FWDA1) FULL STACK WEB DEVELOPMENT FOR 4IR</h3>
+                <img src="Full stack development.png" alt="Subject 3 Photo">
+                <p>Full Stack Development refers to the comprehensive skill set required to handle both the
+                    front-end and back-end aspects of web development.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h2>Historic Places</h2>
+            </div>
+            <div class="place">
+                <div class="col-4">
+                    <h3>Durban City Hall</h3>
+                    <p>Description. The building, which features an Edwardian neobaroque style, is almost an exact
+                        replica of Belfast City Hall in Northern Ireland. The façades are decorated by allegorical
+                        statues depicting the arts, music, literature, commerce and industry.</p>
+                    <img src="historic pic 1.jpg" alt="Historic place 1">
+                </div>
+                <div class="col-4">
+                    <h3>Moses Mabhida Stadium</h3>
+                    <p>The stadium has a capacity of 55,500 (expandable up to 75,000). The stadium is adjacent to
+                        the Kings Park Stadium.</p>
+                    <img src="historic pic 2.jpg" alt="Historic Place 2 Photo">
+                </div>
+                <div class="col-4">
+                    <h3>uShaka Marine World</h3>
+                    <p>uShaka Marine World is a 16-hectare (40-acre) theme park that opened on 30 April 2004 in
+                        Durban, KwaZulu-Natal, South Africa. It has a total capacity of 4.6 million gallons
+                        containing 10,000 animal species.</p>
+                    <img src="historic pic 3.jpg" alt="Historic Place 3 Photo">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Thobani Men-T. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
+
